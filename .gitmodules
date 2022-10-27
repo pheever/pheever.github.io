@@ -1,0 +1,6 @@
+[submodule "piko"]
+	path = piko
+	url = https://github.com/heksagonnet/piko.git
+[submodule "themes/piko"]
+	path = themes/piko
+	url = https://github.com/heksagonnet/piko.git

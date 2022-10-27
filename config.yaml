@@ -1,0 +1,149 @@
+---
+baseURL: https://piko-heksagon.netlify.app/
+languageCode: en-us
+title: phivos phivou
+theme: piko
+paginate: "9"
+copyright: A [![hugo](https://gohugo.io/favicon-32x32.png)](https://gohugo.io/) template by [Heksagon](https://www.heksagon.net "Your most friendly developer")
+googleAnalytics: # Enter Google Analytics ie. UA-012345678-9
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+
+params:
+  analytics:
+    google:
+      SiteVerificationTag: # Google Site Verification
+    yandex:
+      SiteVerificationTag: # Yandex Site Verification
+    bing:
+      SiteVerificationTag: # Bing Site Verification
+  env: production
+  author: Phivos Phivou
+  description: Your website description
+  math: false
+  images:
+  - backround.jpg
+  label:
+    title: phivos phivou
+    text: yo
+    icon: /sunglasses.png
+    iconHeight: 35
+    iconWIdth: 35
+  comments: true
+  mainSections:
+  - blog
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowRelated: true
+  CookieNotice: We use cookies to improve your experience on our site and to show
+    you relevant advertising.
+  CookieLink: /legal/privacy/#cookies-and-web-beacons
+  CookieButton: Cookies Policy
+  disableAnchoredHeadings: false
+  contactFormAction: # Get link from https://formsubmit.io or https://fabform.io
+  assets:
+    disableFingerprinting: false
+    favicon: /favicon.png
+    favicon16x16: /favicon.png
+    favicon32x32: /favicon.png
+    apple_touch_icon: /favicon.png
+    safari_pinned_tab: /favicon.png
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  homepage:
+    # Hero Section
+    disableHeroSection: true
+    heroUpperTitle: 
+    heroTitle: Piko
+    heroDescription: Lightweight theme for your every need
+    heroCTAPrimaryText: Blog
+    heroCTAPrimaryUrl: "/blog/"
+    heroCTASecondaryText: Contact Me
+    heroCTASecondaryUrl: "/contact/"
+    heroBackgroundImage: "/uploads/portfolio-1.webp"
+    # Blog Section
+    disableBlogSection: true
+    blogTitle: Latest Posts
+    blogDescription: This is my latest blog posts
+    seeMoreText: More Posts
+    # About Section    
+    disableAboutSection: false
+    aboutTitle: Hello 👋
+    aboutDescription: 
+    aboutImgUrl: profile.jpg
+    aboutContent: Hi guys. This is where you put something about yourself.
+    # Portfolio Section
+    disablePortfolioSection: true
+    portfolioTitle: Portfolio
+    portfolioDescription: Some of my works
+    portfolio:
+    - imageUrl: /uploads/portfolio-1.webp
+      alt: # image alt for better SEO
+      description: Portfolio One.
+      websiteUrl: #
+    - imageUrl: /uploads/portfolio-2.webp
+      alt: # image alt for better SEO
+      description: Portfolio Two.
+      websiteUrl: #
+    - imageUrl: /uploads/portfolio-3.webp
+      alt: # image alt for better SEO
+      description: Portfolio Three.
+      websiteUrl: #
+  # Search Options (https://fusejs.io/)
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: "0"
+    distance: "1000"
+    threshold: "0.4"
+    minMatchCharLength: "0"
+    keys:
+    - title
+    - permalink
+    - summary
+    - content
+  plugins:
+    css:
+    - link: plugins/css/pico.min.css
+    js:
+    - link: plugins/js/feather.min.js
+menus:
+  main:
+  - name: Email
+    pre: mail
+    url: "mailto:phivos.phivou@outlook.com"
+    weight: "40"
+  - name: Github
+    title: 
+    pre: github
+    url: https://github.com/heksagonnet/piko
+    weight: "50"
+  - name: LinkedIn
+    title: 
+    pre: linkedin
+    url: https://www.linkedin.com/in/phivos-phivou-480062106
+    weight: "50"
+  - name: Twitter
+    title: 
+    pre: twitter
+    url: https://twitter.com/phivosp
+    weight: "50"
