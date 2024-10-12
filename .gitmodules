@@ -4,3 +4,6 @@
 [submodule "themes/piko"]
 	path = themes/piko
 	url = https://github.com/heksagonnet/piko.git
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
