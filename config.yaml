@@ -24,12 +24,32 @@ params:
     icon: fa-solid fa-envelope fa-2x
     weight: 2
     url: mailto:phivos.phivou@gmail.com
+  - name: Gitlab
+    icon: fa-brands fa-gitlab fa-2x
+    weight: 1
+    url: https://gitlab.com/pheever
   - name: Github
     icon: fa-brands fa-github fa-2x
     weight: 1
-    url: https://gitlab.com/pheever
+    url: https://github.com/pheever
   - name: LinkedIn
     icon: fa-brands fa-linkedin fa-2x
     weight: 2
     url: https://www.linkedin.com/in/phivos-phivou-480062106
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  author: authors
+menu:
+  main:
+  - name: home
+    url: /
+    weight: 0
+  - name: blog
+    url: posts/
+    weight: 1
+  - name: about
+    url: about/
+    weight: 2
 ...
