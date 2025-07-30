@@ -4,7 +4,7 @@ languagecode: en
 defaultcontentlanguage: en
 params:
   author: Phivos Phivou
-  info: A human platform engineer
+  info: absence is information
   description: This is my space
   keywords: blog,developer,personal
   avatarurl: profile.jpg
@@ -35,7 +35,7 @@ params:
   - name: LinkedIn
     icon: fa-brands fa-linkedin fa-2x
     weight: 2
-    url: https://www.linkedin.com/in/phivos-phivou-480062106
+    url: https://www.linkedin.com/in/phivos-phivou
 taxonomies:
   category: categories
   series: series
