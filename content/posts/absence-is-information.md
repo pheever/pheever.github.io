@@ -1,15 +1,16 @@
 ---
-authors: ["Phivos"]
-title: About absence
+authors: ["phivos"]
+title: Absence is information
 date: 2025-07-30
-description: my thoughts on absence
+description: my thoughts on interpreting absence of anything
 tags:
-- hugo
 - post
 - absence
+- information
+- interpretation
 ---
 
-# About absence
+# Absence is information
 
 The idea that absence itself carries information challenges our intuitive notion that information requires the presence of something.
 
@@ -22,3 +23,5 @@ From a computational perspective, the absence of expected data can trigger error
 The philosophical implications run deeper - absence as information suggests that reality is defined as much by what isn't there as by what is. It's a reminder that information isn't just about positive signals but about the entire context of expectations, patterns, and deviations from them.
 
 _Anthropics' Claude_
+
+`prompt: Absence is information`
