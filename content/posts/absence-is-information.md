@@ -10,8 +10,6 @@ tags:
 - interpretation
 ---
 
-# Absence is information
-
 The idea that absence itself carries information challenges our intuitive notion that information requires the presence of something.
 
 In information theory, this principle is fundamental. When we expect a signal and don't receive it, that silence is itself meaningful data. A missing heartbeat on a monitor, a dog that doesn't bark in the night, an expected email that never arrives - these absences communicate just as powerfully as their presence would.
