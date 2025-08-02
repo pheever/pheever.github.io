@@ -8,4 +8,4 @@ Before that, I held DevOps and engineering roles at Jinius and Playtech Sports, 
 
 I hold a degree in Computer Science from the University of Crete, where I completed a dissertation on distributed algorithms for wireless ad-hoc networks—work that was later published. I enjoy experimenting with new technologies, building small tools in my spare time (like a tax calculator in Angular), and learning across a wide range of domains.
 
-When I’m not tinkering with systems or writing code, you’ll probably find me behind a camera (especially under a starry sky) or on a backgammon board—where I humbly consider myself a grandmaster in disguise.
+When I’m not tinkering with systems or writing code, you’ll probably find me on a backgammon board—where I humbly consider myself a grandmaster, or behind a camera under a starry sky.
