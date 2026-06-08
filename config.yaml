@@ -17,6 +17,9 @@ params:
 
   enableTwemoji: true
 
+  customCSS:
+  - css/custom.css
+
   colorScheme: auto
   hidecolorschemetoggle: false
   social:

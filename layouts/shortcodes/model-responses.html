@@ -1,0 +1,44 @@
+<div class="model-carousel">
+  <div class="model-carousel-track">{{ .Inner }}</div>
+  <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+  <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+  <div class="carousel-nav">
+    <div class="carousel-dots"></div>
+  </div>
+</div>
+<script>
+(function () {
+  var carousel = document.currentScript.previousElementSibling;
+  var track = carousel.querySelector('.model-carousel-track');
+  var cards = track.querySelectorAll('.model-card');
+  var dotsEl = carousel.querySelector('.carousel-dots');
+  var current = 0;
+
+  cards.forEach(function (_, i) {
+    var dot = document.createElement('span');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', function () { goTo(i); });
+    dotsEl.appendChild(dot);
+  });
+
+  function goTo(n) {
+    current = ((n % cards.length) + cards.length) % cards.length;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    carousel.querySelectorAll('.carousel-dot').forEach(function (d, i) {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  carousel.querySelector('.carousel-prev').addEventListener('click', function () { goTo(current - 1); });
+  carousel.querySelector('.carousel-next').addEventListener('click', function () { goTo(current + 1); });
+
+  var touchStartX = 0;
+  track.addEventListener('touchstart', function (e) {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  track.addEventListener('touchend', function (e) {
+    var delta = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 40) goTo(current + (delta > 0 ? 1 : -1));
+  }, { passive: true });
+})();
+</script>

@@ -1,0 +1,109 @@
+/* model response carousel */
+.model-carousel {
+  margin: 2rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.model-carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.model-carousel-track .model-card {
+  flex: 0 0 100%;
+  min-width: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 3px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
+}
+
+.model-card-header {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.model-card-body {
+  padding: 0 1.25rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.model-card-body p:last-child {
+  margin-bottom: 0;
+}
+
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.35;
+  color: inherit;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.carousel-prev { left: 0.5rem; }
+.carousel-next { right: 0.5rem; }
+
+.carousel-btn:hover {
+  opacity: 0.75;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.25;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.carousel-dot.active {
+  opacity: 0.75;
+}
+
+@media (prefers-color-scheme: dark) {
+  .model-carousel-track .model-card {
+    border-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+/* series count in post list */
+.series-count {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-left: 0.5rem;
+}

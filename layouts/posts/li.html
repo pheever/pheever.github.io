@@ -1,0 +1,11 @@
+<li>
+  <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+  {{ if eq .Kind "section" -}}
+  <a class="title" href="{{ .RelPermalink }}">
+    <i class="fa-solid fa-folder-open" style="margin-right: 0.35em" aria-hidden="true"></i>{{ .Title }}
+  </a>
+  <span class="series-count">{{ len .RegularPages }} posts</span>
+  {{- else -}}
+  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+  {{- end }}
+</li>
