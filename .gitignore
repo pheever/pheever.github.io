@@ -1,3 +1,19 @@
+# Hugo build output
 public/
 resources/
 themes/
+
+# Hugo cache
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Node (if using npm for asset pipeline)
+node_modules/
